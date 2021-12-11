@@ -1,0 +1,456 @@
+/*Start of main */
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #5c5353;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    
+}
+
+button
+{
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+ h2 , h3
+{
+    color: rgb(119, 119, 119);
+   
+}
+.clearfix
+{
+    clear: both;
+}
+ p
+{
+    color: rgb(119, 119, 119);
+    padding: 5px;
+    line-height: 25px;
+
+}
+/*End   of main */
+
+
+/*Start of Header */
+header
+{
+    width: 100%;
+    background-image: url("../images/slider.jpg");
+    background-repeat: none;
+    background-size: cover;
+    height: 90vh;
+}
+header .contain
+{
+  background-color: transparent;
+  color: #9b3939;
+  border-bottom: 3px solid red;
+  border-top: 3px solid red;
+
+  width: 32%;
+  font-size: 3rem;
+  position: relative;
+  left: 35%;
+  top: 50%;
+  
+
+}
+header .contain::before
+{
+    content: " | ";
+    animation-name: changing;
+    animation-duration:12s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes changing
+{
+    0% { content: "W | ";}
+    5% {content: "We | ";}
+    10% {content: "Web | ";}
+    15%{content: "We | ";}
+    20%{content: "W | ";}
+    25%{content: " | ";}
+    30%{content: "G | ";}
+    35%{content: "Gr | ";}
+    40%{content: "Gra | ";}
+    45%{content: "Grap | ";}
+    50%{content: "Graph | ";}
+    55%{content: "Graphi | ";}
+    60%{content: "Graphic |";}
+    65%{content : "Graphi | ";}
+    70%{content : "Graph | ";}
+    75%{content: "Grap | ";}
+    80%{content: "Gra | ";}
+    85%{content: "Gr | ";}
+    90%{content: "G | ";}
+    100%{ content: " | ";}
+}
+header button
+{
+    position: relative;
+    left: 45%;
+    top: 60%;
+}
+
+/*End   of Header */
+
+
+/*Start of nav */
+nav
+{
+    width: 100%;
+    height: 10vh;
+    background-color: #252F31;
+
+}
+
+nav .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ nav .container .logo
+{
+    margin-left: 10px;
+    color: white;
+    
+}
+nav .container .logo span
+{
+    color: #2ecc71;
+}
+
+nav .container .nav ul li
+{
+   float: left;
+   list-style: none;
+   padding: 6px;
+   color: white;
+   margin-bottom: 5px;
+   transition: color 2s;
+
+} 
+nav .container .nav ul li:hover
+{
+    color: #2ecc71;
+
+}
+
+/*End   of nav */
+
+
+/* Start of Section one*/
+section .container 
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+section .container .content1
+{
+    width: 33.333%;
+    background-color: #DDD;
+    margin: 1px;
+    text-align: center;
+
+}
+
+
+/*End of Section one */
+
+
+/* Start of Section two*/
+section
+{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 6px;
+}
+section .img
+{
+    width: 40%;
+}
+img
+{
+    width: 100%;
+}
+section .about
+{
+    width: 53%;
+    margin-left: 5px;
+    color: rgb(119, 119, 119);
+
+}
+
+section i 
+{
+    color: #2ecc71;
+    margin-right: 10px;
+}
+section .about .icon_contain
+{
+    
+}
+section .about .icons
+{
+    width: 45%;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* End   of Section two*/
+
+
+/*Start of section3*/
+.section3
+{
+    background-color: white;
+    width: 100%;
+}
+.section3 .mySkill
+{
+    width:50%;
+
+}
+
+
+ .btn
+{
+    color: #2ecc71;
+    border: 2px solid #2ecc71;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    
+}
+.section3 .Skills
+{
+    width: 50%;
+    margin-left: 10px;
+}
+
+.section3 .Skills .progress .technique
+{
+    height: 25px;
+    background-color: #F2F2F2;
+    margin-bottom: 4px;
+}
+.section3 .Skills .progress .technique span
+{
+    line-height: 25px;
+    background-color: #2DCC70;
+    display: block;
+    text-align: right;
+}
+
+
+/*End   of section3*/
+
+/*Start   of section4*/
+.section4
+{
+    background-color: #DDD;
+}
+.section4 div
+{
+    text-align: center;
+}
+
+/*End     of section4*/
+
+/*Start   of section5*/
+.section4
+{
+    background-color: white;
+    width: 100%;
+}
+.section4  .myEducation
+{
+    width:50%;
+    text-align: left;
+
+}
+.section4  .Certificate 
+{
+    width:50%;
+}
+.section4  .Certificate .Certificate1
+{
+    text-align: left;
+}
+
+.section4  .Certificate span
+{
+    background-color: rgb(45, 204, 112);
+    padding: 5px;
+    margin-left: 5px;
+    color: white;
+}
+/*End     of section5*/
+/*Start of Section 6*/
+
+.section5 .container
+{
+    text-align: center;
+}
+.section5 .container ul
+{
+    margin-right:30px ;
+}
+.section5 .container ul li
+{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2DCC70;
+    display: inline-block;
+    cursor: pointer;
+}
+.section5 .container ul li:active
+{
+    background-color:#2DCC70 ;
+}
+.section5 .container q
+{
+    color: #888;
+    font: italic bold 18px/1.8 Arial, Tahoma;
+}
+.section5 .container h3
+{
+    color: #888;
+    font: italic bold 18px/1.8 Arial, Tahoma;
+}
+/*End   of Section 6*/
+
+/*Start of Section 7*/
+
+
+.section4 .container .portofolio p 
+{
+    color: #888;
+    font: italic bold 18px/1.8 Arial, Tahoma;
+}
+.section4 .container .portofolio .image
+{
+    width: 30%;
+    float: left;
+}
+.section4 .container .portofolio .image img
+{
+    width: 95%;
+    margin:10px;
+    padding:3px;
+    background-color:#FFF;
+    border:1px solid #CCC
+}
+
+.section4 .container .portofolio .contain
+{
+    margin: auto;
+
+    width: 95%;
+
+}
+/*End   of Section 7*/
+
+/*Start of contact*/
+.contact {
+    background-color:#252F31;
+    overflow:hidden;
+    padding-top:50px;
+    padding-bottom:70px
+}
+.contact form label {display:block;color:#D1D6DA;margin:10px 0}
+
+.contact .info
+{
+    width: 50%;
+}
+.contact .info {width:50%;margin-right:5%}
+
+.contact h2 {color:#FFF;margin-left:40px}
+
+.contact p {color:#6A6E71;margin-left:40px}
+
+.contact p strong {color:#D1D6DA}
+form
+{
+    width: 45%;
+}
+form input[type="text"]
+{
+    padding:10px;
+    border:0;
+    width:95%;
+    margin-bottom:10px;
+    background-color:#4B5557;
+    color:#FFF;
+}
+.contact form textarea {
+    background-color:#4B5557;
+    color:#FFF;
+    padding:10px;
+    border:0;
+    width:80%;
+    margin-bottom:10px;
+    height:300px
+}
+.contact form input[type="submit"] {
+    background-color:#191E22;
+    color:#FFF;
+    padding:10px 20px;
+    border:0;
+    margin-top:10px
+
+}
+.contact form span
+{
+    color: #9b3939;
+}
+/*end of contact*/ 
+
+/* Start of footer*/
+footer 
+{
+    background-color:#191E22;
+    color:#6A6E71;
+    padding:6px 0;
+
+}
+footer .container
+{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+footer ul li {
+    display:inline-block;
+    cursor: pointer;
+    padding: 5px;
+}
+footer ul li:hover i
+{
+    color: #57a2b1;
+}
+
+/*end of footer*/
+/* background-color: rgb(45, 204, 112); */
